@@ -11,7 +11,60 @@
 		90E25FD6227E3D1F0044CA09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E25FD5227E3D1F0044CA09 /* ViewController.swift */; };
 		90E25FD8227E3D230044CA09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90E25FD7227E3D230044CA09 /* Assets.xcassets */; };
 		90E25FDB227E3D230044CA09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E25FD9227E3D230044CA09 /* Main.storyboard */; };
+		90E25FE5227E3D600044CA09 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E25FE4227E3D600044CA09 /* AudioPlayer.swift */; };
+		90E25FF3227E3DA00044CA09 /* AudioUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E25FF1227E3DA00044CA09 /* AudioUnitViewController.xib */; };
+		90E25FF9227E3DA00044CA09 /* VolumePlugin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 90E25FEA227E3DA00044CA09 /* VolumePlugin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		90E26007227E3DBE0044CA09 /* AUFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 90E26005227E3DBD0044CA09 /* AUFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90E2600A227E3DBE0044CA09 /* AUFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E26003227E3DBD0044CA09 /* AUFramework.framework */; };
+		90E2600B227E3DBE0044CA09 /* AUFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90E26003227E3DBD0044CA09 /* AUFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90E26010227E3DFB0044CA09 /* VolumePluginAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90E25FED227E3DA00044CA09 /* VolumePluginAudioUnit.mm */; };
+		90E26011227E3DFB0044CA09 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E25FEF227E3DA00044CA09 /* AudioUnitViewController.swift */; };
+		90E26012227E3E040044CA09 /* AudioUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E25FF1227E3DA00044CA09 /* AudioUnitViewController.xib */; };
+		90E26013227E3E0E0044CA09 /* VolumePluginAudioUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 90E25FEC227E3DA00044CA09 /* VolumePluginAudioUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90E26016227E3F5D0044CA09 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E26015227E3F5D0044CA09 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90E25FF7227E3DA00044CA09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E25FC8227E3D1F0044CA09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90E25FE9227E3DA00044CA09;
+			remoteInfo = VolumePlugin;
+		};
+		90E26008227E3DBE0044CA09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E25FC8227E3D1F0044CA09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90E26002227E3DBD0044CA09;
+			remoteInfo = AUFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90E25FFD227E3DA00044CA09 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				90E25FF9227E3DA00044CA09 /* VolumePlugin.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E2600F227E3DBE0044CA09 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				90E2600B227E3DBE0044CA09 /* AUFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		90E25FD0227E3D1F0044CA09 /* AUHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AUHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +74,20 @@
 		90E25FDA227E3D230044CA09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90E25FDC227E3D230044CA09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90E25FDD227E3D230044CA09 /* AUHost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AUHost.entitlements; sourceTree = "<group>"; };
+		90E25FE3227E3D460044CA09 /* z.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = z.wav; sourceTree = "<group>"; };
+		90E25FE4227E3D600044CA09 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		90E25FEA227E3DA00044CA09 /* VolumePlugin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VolumePlugin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E25FEC227E3DA00044CA09 /* VolumePluginAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VolumePluginAudioUnit.h; sourceTree = "<group>"; };
+		90E25FED227E3DA00044CA09 /* VolumePluginAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VolumePluginAudioUnit.mm; sourceTree = "<group>"; };
+		90E25FEF227E3DA00044CA09 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		90E25FF2227E3DA00044CA09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AudioUnitViewController.xib; sourceTree = "<group>"; };
+		90E25FF4227E3DA00044CA09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E25FF6227E3DA00044CA09 /* VolumePlugin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VolumePlugin.entitlements; sourceTree = "<group>"; };
+		90E26003227E3DBD0044CA09 /* AUFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AUFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E26005227E3DBD0044CA09 /* AUFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUFramework.h; sourceTree = "<group>"; };
+		90E26006227E3DBD0044CA09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E26015227E3F5D0044CA09 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		90E26017227E3F7D0044CA09 /* Buffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Buffer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +95,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E2600A227E3DBE0044CA09 /* AUFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E25FE7227E3DA00044CA09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E26000227E3DBD0044CA09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E26016227E3F5D0044CA09 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,7 +121,10 @@
 			isa = PBXGroup;
 			children = (
 				90E25FD2227E3D1F0044CA09 /* AUHost */,
+				90E26004227E3DBD0044CA09 /* AUFramework */,
+				90E25FEB227E3DA00044CA09 /* VolumePlugin */,
 				90E25FD1227E3D1F0044CA09 /* Products */,
+				90E26014227E3F5C0044CA09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				90E25FD0227E3D1F0044CA09 /* AUHost.app */,
+				90E25FEA227E3DA00044CA09 /* VolumePlugin.appex */,
+				90E26003227E3DBD0044CA09 /* AUFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +143,8 @@
 			children = (
 				90E25FD3227E3D1F0044CA09 /* AppDelegate.swift */,
 				90E25FD5227E3D1F0044CA09 /* ViewController.swift */,
+				90E25FE4227E3D600044CA09 /* AudioPlayer.swift */,
+				90E25FE3227E3D460044CA09 /* z.wav */,
 				90E25FD7227E3D230044CA09 /* Assets.xcassets */,
 				90E25FD9227E3D230044CA09 /* Main.storyboard */,
 				90E25FDC227E3D230044CA09 /* Info.plist */,
@@ -63,7 +153,50 @@
 			path = AUHost;
 			sourceTree = "<group>";
 		};
+		90E25FEB227E3DA00044CA09 /* VolumePlugin */ = {
+			isa = PBXGroup;
+			children = (
+				90E25FF4227E3DA00044CA09 /* Info.plist */,
+				90E25FF6227E3DA00044CA09 /* VolumePlugin.entitlements */,
+			);
+			path = VolumePlugin;
+			sourceTree = "<group>";
+		};
+		90E26004227E3DBD0044CA09 /* AUFramework */ = {
+			isa = PBXGroup;
+			children = (
+				90E26005227E3DBD0044CA09 /* AUFramework.h */,
+				90E25FEC227E3DA00044CA09 /* VolumePluginAudioUnit.h */,
+				90E25FED227E3DA00044CA09 /* VolumePluginAudioUnit.mm */,
+				90E26017227E3F7D0044CA09 /* Buffer.hpp */,
+				90E25FEF227E3DA00044CA09 /* AudioUnitViewController.swift */,
+				90E25FF1227E3DA00044CA09 /* AudioUnitViewController.xib */,
+				90E26006227E3DBD0044CA09 /* Info.plist */,
+			);
+			path = AUFramework;
+			sourceTree = "<group>";
+		};
+		90E26014227E3F5C0044CA09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90E26015227E3F5D0044CA09 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		90E25FFE227E3DBD0044CA09 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E26013227E3E0E0044CA09 /* VolumePluginAudioUnit.h in Headers */,
+				90E26007227E3DBE0044CA09 /* AUFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		90E25FCF227E3D1F0044CA09 /* AUHost */ = {
@@ -73,15 +206,54 @@
 				90E25FCC227E3D1F0044CA09 /* Sources */,
 				90E25FCD227E3D1F0044CA09 /* Frameworks */,
 				90E25FCE227E3D1F0044CA09 /* Resources */,
+				90E25FFD227E3DA00044CA09 /* Embed App Extensions */,
+				90E2600F227E3DBE0044CA09 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				90E25FF8227E3DA00044CA09 /* PBXTargetDependency */,
+				90E26009227E3DBE0044CA09 /* PBXTargetDependency */,
 			);
 			name = AUHost;
 			productName = AUHost;
 			productReference = 90E25FD0227E3D1F0044CA09 /* AUHost.app */;
 			productType = "com.apple.product-type.application";
+		};
+		90E25FE9227E3DA00044CA09 /* VolumePlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90E25FFA227E3DA00044CA09 /* Build configuration list for PBXNativeTarget "VolumePlugin" */;
+			buildPhases = (
+				90E25FE6227E3DA00044CA09 /* Sources */,
+				90E25FE7227E3DA00044CA09 /* Frameworks */,
+				90E25FE8227E3DA00044CA09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VolumePlugin;
+			productName = VolumePlugin;
+			productReference = 90E25FEA227E3DA00044CA09 /* VolumePlugin.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		90E26002227E3DBD0044CA09 /* AUFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90E2600C227E3DBE0044CA09 /* Build configuration list for PBXNativeTarget "AUFramework" */;
+			buildPhases = (
+				90E25FFE227E3DBD0044CA09 /* Headers */,
+				90E25FFF227E3DBD0044CA09 /* Sources */,
+				90E26000227E3DBD0044CA09 /* Frameworks */,
+				90E26001227E3DBD0044CA09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AUFramework;
+			productName = AUFramework;
+			productReference = 90E26003227E3DBD0044CA09 /* AUFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +266,17 @@
 				ORGANIZATIONNAME = borama;
 				TargetAttributes = {
 					90E25FCF227E3D1F0044CA09 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					90E25FE9227E3DA00044CA09 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					90E26002227E3DBD0044CA09 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -112,6 +295,8 @@
 			projectRoot = "";
 			targets = (
 				90E25FCF227E3D1F0044CA09 /* AUHost */,
+				90E25FE9227E3DA00044CA09 /* VolumePlugin */,
+				90E26002227E3DBD0044CA09 /* AUFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +311,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90E25FE8227E3DA00044CA09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E25FF3227E3DA00044CA09 /* AudioUnitViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E26001227E3DBD0044CA09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E26012227E3E040044CA09 /* AudioUnitViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,10 +336,40 @@
 			files = (
 				90E25FD6227E3D1F0044CA09 /* ViewController.swift in Sources */,
 				90E25FD4227E3D1F0044CA09 /* AppDelegate.swift in Sources */,
+				90E25FE5227E3D600044CA09 /* AudioPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E25FE6227E3DA00044CA09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E25FFF227E3DBD0044CA09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E26010227E3DFB0044CA09 /* VolumePluginAudioUnit.mm in Sources */,
+				90E26011227E3DFB0044CA09 /* AudioUnitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90E25FF8227E3DA00044CA09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90E25FE9227E3DA00044CA09 /* VolumePlugin */;
+			targetProxy = 90E25FF7227E3DA00044CA09 /* PBXContainerItemProxy */;
+		};
+		90E26009227E3DBE0044CA09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90E26002227E3DBD0044CA09 /* AUFramework */;
+			targetProxy = 90E26008227E3DBE0044CA09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		90E25FD9227E3D230044CA09 /* Main.storyboard */ = {
@@ -147,6 +378,14 @@
 				90E25FDA227E3D230044CA09 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90E25FF1227E3DA00044CA09 /* AudioUnitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90E25FF2227E3DA00044CA09 /* Base */,
+			);
+			name = AudioUnitViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -270,8 +509,8 @@
 		90E25FE1227E3D230044CA09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AUHost/AUHost.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7G4JF8R3R6;
@@ -289,8 +528,8 @@
 		90E25FE2227E3D230044CA09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AUHost/AUHost.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7G4JF8R3R6;
@@ -302,6 +541,104 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.borama.AUHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		90E25FFB227E3DA00044CA09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VolumePlugin/VolumePlugin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G4JF8R3R6;
+				INFOPLIST_FILE = VolumePlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.borama.AUHost.VolumePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VolumePlugin/VolumePlugin-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		90E25FFC227E3DA00044CA09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VolumePlugin/VolumePlugin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G4JF8R3R6;
+				INFOPLIST_FILE = VolumePlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.borama.AUHost.VolumePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VolumePlugin/VolumePlugin-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		90E2600D227E3DBE0044CA09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7G4JF8R3R6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = AUFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.borama.AUFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90E2600E227E3DBE0044CA09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7G4JF8R3R6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = AUFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.borama.AUFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -322,6 +659,24 @@
 			buildConfigurations = (
 				90E25FE1227E3D230044CA09 /* Debug */,
 				90E25FE2227E3D230044CA09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90E25FFA227E3DA00044CA09 /* Build configuration list for PBXNativeTarget "VolumePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E25FFB227E3DA00044CA09 /* Debug */,
+				90E25FFC227E3DA00044CA09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90E2600C227E3DBE0044CA09 /* Build configuration list for PBXNativeTarget "AUFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E2600D227E3DBE0044CA09 /* Debug */,
+				90E2600E227E3DBE0044CA09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
