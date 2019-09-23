@@ -149,15 +149,14 @@ const AudioUnitParameterID myParam1 = 0;
             }
         }
         
-        float* input = (float*)inAudioBufferList->mBuffers[0].mData;
-        float* output = (float*)outAudioBufferList->mBuffers[0].mData;
+        UInt32 samplesCount = inAudioBufferList->mBuffers[0].mDataByteSize / sizeof(float);
         
-        UInt32 dataSize = inAudioBufferList->mBuffers[0].mDataByteSize / sizeof(float);
-        
-        // Samples are not interleaved. In stereo first package of samples of dataSize is left channgel, the next is the right channel
         for (int j = 0; j < inAudioBufferList->mNumberBuffers; j++) {
-            for (int i = 0; i < dataSize; i++) {
-                output[i + j * dataSize] = buffer->volume * input[i + j * dataSize];
+            float* input = (float*)inAudioBufferList->mBuffers[j].mData;
+            float* output = (float*)outAudioBufferList->mBuffers[j].mData;
+            // the might be more than one channel (stereo)
+            for (int i = 0; i < samplesCount; i++) {
+                output[i] = buffer->volume * input[i];
             }
         }
         
