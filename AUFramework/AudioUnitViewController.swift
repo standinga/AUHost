@@ -21,6 +21,20 @@ public class AudioUnitViewController: AUViewController, AUAudioUnitFactory {
     
     private var volumeParam: AUParameter?
     
+    // this initializer is called by NSExtensionContextVendor beginRequestWithExtensionItems,
+    // without it Garage Band will not show the UI!
+    init() {
+        super.init(nibName: "AudioUnitViewController", bundle: Bundle(for: AudioUnitViewController.self))
+    }
+    
+    override public init(nibName nibNameOrNil: NSNib.Name?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: "AudioUnitViewController", bundle: Bundle(for: AudioUnitViewController.self))
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         

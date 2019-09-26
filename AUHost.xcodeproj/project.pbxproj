@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90C4238D233C4D0000DF3A1D /* z.wav in Resources */ = {isa = PBXBuildFile; fileRef = 90E25FE3227E3D460044CA09 /* z.wav */; };
+		90C42390233C512800DF3A1D /* VolumePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C4238F233C512800DF3A1D /* VolumePlugin.m */; };
 		90E25FD4227E3D1F0044CA09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E25FD3227E3D1F0044CA09 /* AppDelegate.swift */; };
 		90E25FD6227E3D1F0044CA09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E25FD5227E3D1F0044CA09 /* ViewController.swift */; };
 		90E25FD8227E3D230044CA09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90E25FD7227E3D230044CA09 /* Assets.xcassets */; };
@@ -67,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		90C4238F233C512800DF3A1D /* VolumePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolumePlugin.m; sourceTree = "<group>"; };
 		90E25FD0227E3D1F0044CA09 /* AUHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AUHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E25FD3227E3D1F0044CA09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90E25FD5227E3D1F0044CA09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +161,7 @@
 			children = (
 				90E25FF4227E3DA00044CA09 /* Info.plist */,
 				90E25FF6227E3DA00044CA09 /* VolumePlugin.entitlements */,
+				90C4238F233C512800DF3A1D /* VolumePlugin.m */,
 			);
 			path = VolumePlugin;
 			sourceTree = "<group>";
@@ -306,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C4238D233C4D0000DF3A1D /* z.wav in Resources */,
 				90E25FD8227E3D230044CA09 /* Assets.xcassets in Resources */,
 				90E25FDB227E3D230044CA09 /* Main.storyboard in Resources */,
 			);
@@ -344,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C42390233C512800DF3A1D /* VolumePlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
